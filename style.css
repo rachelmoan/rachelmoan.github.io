@@ -35,7 +35,7 @@ body {
 }
 
 .links a {
-  display: block;
+  display: inline;
   text-decoration: none;
   color: #0066cc;
   margin-bottom: 4px;
