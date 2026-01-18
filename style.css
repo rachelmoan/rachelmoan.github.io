@@ -37,8 +37,7 @@ body {
 .links a {
   display: inline;
   text-decoration: none;
-  color: #0066cc;
-  margin-bottom: 4px;
+  color: #0066cc
 }
 
 .links a:hover {
