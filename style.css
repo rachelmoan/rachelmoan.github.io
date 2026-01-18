@@ -8,66 +8,60 @@ body {
 
 .container {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Top section layout */
-.top-section {
+/* Top layout */
+.top {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 40px;
-  margin-bottom: 60px;
+  grid-template-columns: 180px 1fr;
+  column-gap: 40px;
+  align-items: start;
 }
 
-/* Sidebar */
-.sidebar {
-  text-align: left;
+/* Left column */
+.left h1 {
+  margin: 10px 0 10px 0;
+  font-size: 1.7em;
 }
 
 .profile-photo {
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.sidebar h1 {
-  margin: 10px 0 5px 0;
-  font-size: 1.6em;
-}
-
-.subtitle {
-  font-size: 0.95em;
-  color: #555;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .links a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: #0066cc;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .links a:hover {
   text-decoration: underline;
 }
 
-/* Bio */
-.main-bio p:first-child {
+/* Right column */
+.right p:first-child {
   margin-top: 0;
 }
 
-/* Section headers */
-h2 {
-  margin-top: 40px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 6px;
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 40px 0;
 }
 
 /* Papers */
+h2 {
+  margin-top: 0;
+}
+
 .papers {
   list-style: none;
   padding-left: 0;
@@ -79,7 +73,7 @@ h2 {
 
 /* Footer */
 footer {
-  margin-top: 70px;
+  margin-top: 60px;
   text-align: center;
   font-size: 0.9em;
   color: #777;
@@ -87,11 +81,11 @@ footer {
 
 /* Mobile */
 @media (max-width: 700px) {
-  .top-section {
+  .top {
     grid-template-columns: 1fr;
   }
 
-  .sidebar {
+  .left {
     text-align: center;
   }
 
@@ -99,13 +93,4 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-/* BibTeX */
-.bibtex {
-  background: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: 15px;
-  overflow-x: auto;
-  font-size: 0.9em;
 }
