@@ -8,13 +8,29 @@
 </head>
 <body>
 
+<style>
+.spaced-link {
+  display: inline-block;  /* Allows proper spacing on inline elements */
+  margin-right: 15px;     /* Adds space to the right of each link */
+}
+
+/* Optional: Remove the extra margin from the very last link */
+.spaced-link:last-child {
+  margin-right: 0;
+}
+</style>
+
 <div class="container">
 
   <!-- Top layout -->
   <div class="top">
 
     <!-- Left column -->
+
     <div class="left">
+      <br>
+      <br>
+      <!-- <br> -->
       <img src="images/rachel.PNG" alt="Photo of Your Name" class="profile-photo">
     </div>
 
@@ -33,9 +49,9 @@
       </p>
 
       <p class="links">
-        <a href="mailto:rmoan2@illinois.edu">rmoan2@illinois.edu </a>
-        <a href="files/CV.pdf">CV </a> 
-        <a href="https://scholar.google.com/citations?user=1sIQt3cAAAAJ&hl=en&oi=ao">Scholar </a>
+        <a href="mailto:rmoan2@illinois.edu" class="spaced-link">rmoan2@illinois.edu </a>
+        <a href="files/CV.pdf" class="spaced-link">CV </a> 
+        <a href="https://scholar.google.com/citations?user=1sIQt3cAAAAJ&hl=en&oi=ao" class="spaced-link">Scholar </a>
         <!-- <a href="https://github.com/yourname">GitHub</a> -->
       </p>
     </div>
